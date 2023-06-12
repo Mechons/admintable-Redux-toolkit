@@ -1,0 +1,13 @@
+
+.admin-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 212, 218)
+}
+.admin-subtitle{
+    margin-right: auto;
+}
+.btn-add-btn{
+margin: 16px;
+}

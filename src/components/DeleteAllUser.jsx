@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteUsers } from '../store/slices/userSlice';
+import Button from 'react-bootstrap/Button';
 
 const DeleteAllUser = () => {
     const dispatch  = useDispatch();
@@ -8,10 +9,10 @@ const DeleteAllUser = () => {
        dispatch(deleteUsers())
     }
   return (
-    <div>
-        <button onClick={deleteUser}>
+    <div  className='mb-2'>
+        <Button variant='danger' size='sm' onClick={deleteUser}>
         DeleteAllUser
-        </button>
+        </Button>
         </div>
   )
 }
